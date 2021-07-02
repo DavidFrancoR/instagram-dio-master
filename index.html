@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram</title>
+</head>
+<body>
+    <div class="instagram-wrapper">
+        <div class="instagram-phone">
+            <img id="image" src="./img/1.jpeg" alt="celular">
+            <!--img id="image" src="./img/2.png" alt="celular"-->
+
+	        <script type = "text/javascript">
+            	var image = document.getElementById("image");
+            	var currentPos = 0;
+            	var images = ["./img/1.jpeg", "./img/2.jpeg", "./img/3.jpeg"]
+
+ 	            function volgendefoto() {
+                	if (++currentPos >= images.length)
+                    	    currentPos = 0;
+
+                	image.src = images[currentPos];
+                }
+
+                setInterval(volgendefoto, 1000);
+            </script>
+        </div>
+        <div class="instagram-continue">
+            <div class="group">
+                <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
+                <div class="profile-photo">
+                    <img id="image1" src="./img/df.jpg" alt="foto de perfil">
+        	        <script type = "text/javascript">
+                    	var image1 = document.getElementById("image1");
+            	        var currentPos1 = 0;
+                     	var images1 = ["./img/df.jpg", "./img/df1.jpg", "./img/df2.jpg"]
+
+ 	                    function volgendefoto1() {
+                        	if (++currentPos1 >= images1.length)
+                            	    currentPos1 = 0;
+
+                        	image1.src = images1[currentPos1];
+                        }
+
+                        setInterval(volgendefoto1, 2000);
+                    </script>
+
+                </div>
+                <a href="#" class="instagram-login">Continue como davidfrancojoias</a>
+                <a href="#" class="instagram-logout">Remover conta</a>
+            </div>
+            <div class="group">
+                <p class="not-account">Não é sprucegabriela?</p>
+                <p class="not-account">
+                    <span class="link-blue">Alternar contas</span>
+                    ou
+                    <span class="link-blue">Inscreva-se</span>
+                </p>
+            </div>
+            <div class="get-the-app">
+                <p class="get-app">Baixe o aplicativo</p>
+                <div class="download">
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
